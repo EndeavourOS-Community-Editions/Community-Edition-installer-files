@@ -112,3 +112,11 @@ package() {
 }
 ```
 And create a pull request to add it to the EndeavourOS repository. this package must be added to your packages list too.
+
+The Structure of your dotfiles should be sorted like this:
+
+* https://github.com/EndeavourOS-Community-Editions/sway
+* 
+So it can be used by the PKGBUILD in the above example.
+
+You do not need to use GitHub any other place can be used also to develop your repo, but to be added to installer we need a copy here at this repository.
