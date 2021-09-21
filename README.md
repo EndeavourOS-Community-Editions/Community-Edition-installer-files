@@ -1,5 +1,5 @@
 # calamares-packagechooser
-Impementation for Community Edition installs with calamares packagechooser module
+Implementation for Community Edition installs with calamares packagechooser module
 
 ## How to get my Community Edition added into EndeavourOS installer?
 
