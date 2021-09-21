@@ -3,15 +3,15 @@ Impementation for Community Edition installs with calamares packagechooser modul
 
 ## How to get my Community Edition added into EndeavourOS installer?
 
-# 1. To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares:
+1. To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares:
 * https://github.com/endeavouros-team/calamares_config_next/blob/master/calamares/modules/packagechooser.conf
 * https://github.com/endeavouros-team/calamares_config_next/blob/master/calamares/modules/
 
-# 2. add the packages list that is needed in addition to the base system you find in this file: *netinstall-ce-base.yaml** here:
+2. add the packages list that is needed in addition to the base system you find in this file: *netinstall-ce-base.yaml** here:
 * https://github.com/endeavouros-team/calamares_config_next/tree/master/calamares/ce
 File name is your **id** used in **packagechooser.conf** that will be used to select and install the packages list inside the **contextualprocess.conf**
 
-# 3. add a screenshot for your Community Edition here:
+3. add a screenshot for your Community Edition here:
 * https://github.com/endeavouros-team/calamares_config_next/tree/master/calamares/images
 
 # packagechooser.conf
