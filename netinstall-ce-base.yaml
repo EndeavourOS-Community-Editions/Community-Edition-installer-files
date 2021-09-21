@@ -1,0 +1,232 @@
+- name: "Base-devel + Common packages"
+  description: "Recommended. Don't change unless you know what you're doing (generic)."
+  hidden: false
+  selected: true
+  critical: true
+  subgroups:
+      - name: "system-defaults"
+        description: "Basic system"
+        selected: true
+        immutable: true
+        packages:
+           - base-devel
+           - linux-headers
+           - linux-firmware
+           - python
+           - lsb-release
+           - mkinitcpio-openswap
+      - name: "X-system"
+        description: "Default X-system"
+        selected: true
+        packages:
+           - xorg-server
+           - xorg-xinit
+           - xorg-xkill
+           - xorg-xrandr
+           - xorg-xinput
+           - xf86-input-libinput
+           - xf86-video-vesa
+           - xf86-video-fbdev
+           - libwnck3
+      - name: "GPU drivers"
+        description: "Graphics hardware drivers"
+        selected: true
+        packages:
+          - xf86-video-amdgpu
+          - xf86-video-ati
+          - xf86-video-intel
+      - name: "Network"
+        description: "Network apps drivers and tools"
+        selected: true
+        packages:
+          - b43-fwcutter
+          - broadcom-wl-dkms
+          - r8168
+          - dnsutils
+          - ipw2100-fw
+          - ipw2200-fw
+          - modemmanager
+          - netctl
+          - net-tools
+          - ntfs-3g
+          - networkmanager
+          - networkmanager-openvpn
+          - nss-mdns
+          - usb_modeswitch
+          - whois
+          - dhclient
+          - ethtool
+          - openconnect
+          - openvpn
+          - rp-pppoe
+          - wireless-regdb
+          - wireless_tools
+          - wpa_supplicant
+          - wvdial
+          - gnu-netcat
+          - iwd
+          - linux-atm
+          - ndisc6
+          - ppp
+          - pptpclient
+          - vpnc
+          - xl2tpd
+          - dialog
+          - dnsmasq
+      - name: "packages management"
+        description: "Packages tools"
+        selected: true
+        packages:
+          - reflector
+          - yay
+          - pacman-contrib
+          - downgrade
+          - rebuild-detector
+      - name: "desktop integration"
+        description: "Useful helper tools and libs for desktop usage"
+        selected: true
+        packages:
+          - xdg-utils
+          - xdg-user-dirs
+          - accountsservice
+          - mlocate
+          - bash-completion
+          - ffmpegthumbnailer
+          - poppler-glib
+          - libgsf
+          - libopenraw
+          - freetype2
+          - gst-libav
+          - gst-plugins-bad
+          - gst-plugins-ugly
+          - gst-plugin-pipewire
+          - libdvdcss
+      - name: "filesystem"
+        description: "Filesystem tools and apps"
+        selected: true
+        packages:
+          - smartmontools
+          - solid
+          - haveged
+      - name: "fonts"
+        description: "EndeavourOS font selection"
+        selected: true
+        packages:
+          - ttf-dejavu
+          - ttf-liberation
+          - ttf-bitstream-vera
+          - cantarell-fonts
+          - noto-fonts
+          - adobe-source-han-sans-jp-fonts
+          - adobe-source-han-sans-kr-fonts
+          - adobe-source-han-sans-cn-fonts
+          - opendesktop-fonts
+          - ttf-opensans
+      - name: "audio"
+        description: "Audio handling tools apps and libs"
+        selected: true
+        packages:
+          - alsa-utils
+          - alsa-plugins
+          - alsa-firmware
+          - pulseaudio
+          - pavucontrol
+          - paprefs
+      - name: "hardware"
+        description: "Hardware support libs and firmware"
+        selected: true
+        packages:
+          - sof-firmware
+          - efibootmgr
+          - dosfstools
+          - mtools
+          - intel-ucode
+          - amd-ucode
+      - name: "power"
+        description: "Powermanagement support"
+        selected: true
+        packages:
+          - tlp
+          - upower
+      - name: "EndeavourOS Apps"
+        description: "EndeavourOS tools and applications"
+        selected: true
+        packages:
+          - yad-eos
+          - endeavouros-theming
+          - reflector-simple
+          - welcome
+          - eos-update-notifier
+          - eos-hooks
+          - eos-rankmirrors
+          - eos-log-tool
+          - keyserver-rank
+          - grub-tools
+      - name: "EndeavourOS applications selection"
+        description: "General tools and applications"
+        selected: true
+        packages:
+          - neofetch
+          - glances
+          - python-defusedxml
+          - hwinfo
+          - wget
+          - s-tui
+          - inxi
+          - tldr
+          - firefox
+- name: "Firefox language package"
+  description: "Add firefox language pack if possible"
+  hidden: true
+  selected: true
+  critical: false
+  packages:
+    - firefox-i18n-$LOCALE
+- name: "Zen Kernel"
+  description: "Will work better in virtual machine SWAY installation"
+  hidden: false
+  selected: false
+  expanded: true
+  critical: true
+  packages:
+    - linux-zen
+    - linux-zen-headers
+- name: "Printing-Support"
+  description: "Support for printing (Cups)"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+    - cups
+    - cups-filters
+    - cups-pdf
+    - ghostscript
+    - gsfonts
+    - foomatic-db-engine
+    - foomatic-db
+    - foomatic-db-ppds
+    - foomatic-db-nonfree
+    - foomatic-db-nonfree-ppds 
+    - gutenprint 
+    - foomatic-db-gutenprint-ppds
+    - splix
+    - system-config-printer
+- name: "Support for HP Printer/Scanner"
+  description: "Extra Packages for HP Printer/Scanner"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+    - hplip
+    - python-pyqt5
+    - python-reportlab
+    - xsane
+- name: "Accessibility Tools"
+  description: "Screen reader and mouse tweaks (impaired vision)"
+  hidden: false
+  selected: false
+  critical: false
+  packages:
+    - orca
+    - mousetweaks
+    - espeak-ng
