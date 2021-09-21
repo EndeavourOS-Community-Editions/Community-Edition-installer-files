@@ -77,3 +77,38 @@ i18n:
  `sway:   "pacman -Sy --needed --noconfirm - < /tmp/ce/sway.txt"`
  
  Where sway is the **id:** and **sway.txt** is the packages list.
+ 
+ 4. create a PKGBUILD that installs your configs to /etc/skel and may runs a config script on first boot to setup user specific stuff
+# PKGBUILD:
+```
+# Maintainer: Aryan <aryanpothu@tutanota.com>
+# Contributor: joekamprad <joekamprad@endeavouros.com>
+# Contributor: The-Repo-Club <The-Repo-Club@github.com>
+
+_pkgname=sway
+pkgname=eos-skel-ce-sway
+pkgver=1.0
+pkgrel=1
+pkgdesc="pre user creation skel setup for SWAY EOS-CE"
+arch=('any')
+groups=('eos-ce')
+url="https://github.com/EndeavourOS-Community-Editions/${pkgname}"
+license=('GPL')
+conflicts=('eos-ce-sway')
+depends=('git')
+source=("${_pkgname}::git+https://github.com/EndeavourOS-Community-Editions/${_pkgname}.git")
+sha256sums=('SKIP')
+
+package() {
+    PREFIX=/etc/skel
+    cd "$_pkgname"
+    mkdir -p "${pkgdir}${PREFIX}/.config/"
+    cp -R ".config/" "${pkgdir}${PREFIX}/"
+    install -Dm644 ".gtkrc-2.0" "${pkgdir}${PREFIX}/.gtkrc-2.0"
+    install -Dm644 ".profile" "${pkgdir}${PREFIX}/.profile"
+    install -Dm644 ".nanorc" "${pkgdir}${PREFIX}/.nanorc"
+    install -Dm755 "set_once.sh" "${pkgdir}${PREFIX}/set_once.sh"
+    install -Dm644 "xed.dconf" "${pkgdir}${PREFIX}/xed.dconf"
+}
+```
+And create a pull request to add it to the EndeavourOS repository. this package must be added to your packages list too.
