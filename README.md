@@ -61,16 +61,6 @@ packagechooser_packagechooser:
     sway:   "pacman -Sy --needed --noconfirm - < /tmp/ce/sway.txt"
     
     bspwm:  "pacman -Sy --needed --noconfirm - < /tmp/ce/bspwm.txt"
- 
-i18n:
- name: "installing package list for chosen Community Edition..."
- name[de]: "Paketliste für ausgewählte Community Edition installieren..."
- name[fr]: "installation de la liste des packages pour l'édition communautaire choisie..."
- name[it]: "installazione dell'elenco dei pacchetti per la Community Edition scelta..."
- name[es]: "instalación de la lista de paquetes para la Community Edition elegida ..."
- name[ru]: "установка списка пакетов для выбранного Community Edition ..."
- name[zh_CN]: "安装所选社区版的软件包列表..."
- name[ja]: "選択したCommunityEditionのパッケージリストをインストールしています..."
 ```
    
    
