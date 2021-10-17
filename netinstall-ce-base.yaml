@@ -10,6 +10,7 @@
         immutable: true
         packages:
            - base-devel
+           - efibootmgr
            - linux-firmware
            - linux-headers
            - lsb-release
@@ -154,7 +155,6 @@
           - dmidecode
           - dmraid
           - dosfstools
-          - efibootmgr
           - hdparm
           - hwdetect
           - intel-ucode
