@@ -4,18 +4,6 @@
   selected: true
   critical: true
   subgroups:
-      - name: "system-defaults"
-        description: "Basic system"
-        selected: true
-        immutable: true
-        packages:
-           - base-devel
-           - efibootmgr
-           - linux-firmware
-           - linux-headers
-           - lsb-release
-           - mkinitcpio-openswap
-           - python
       - name: "X-system"
         description: "Default X-system"
         selected: true
