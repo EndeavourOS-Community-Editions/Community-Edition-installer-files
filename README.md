@@ -92,10 +92,11 @@ package() {
     install -Dm644 "xed.dconf" "${pkgdir}${PREFIX}/xed.dconf"
 }
 ```
-And create a pull request to add it to the EndeavourOS Calamares repository. 
+And create a pull request to add it to the EndeavourOS Calamares repository.
+
 **This package must be added to your packages list too.**
 
-https://github.com/endeavouros-team/PKGBUILDS
+* https://github.com/endeavouros-team/PKGBUILDS
 
 6. The needed Dot-Files for your setup:
 
