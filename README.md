@@ -3,7 +3,8 @@ Implementation for Community Edition installs with calamares packagechooser modu
 
 ## How to get my Community Edition added into EndeavourOS installer?
 
-1. To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares:
+To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares.
+1. packagechooser.conf:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/packagechooser.conf
 
 2. the install command entry:
@@ -91,7 +92,8 @@ package() {
     install -Dm644 "xed.dconf" "${pkgdir}${PREFIX}/xed.dconf"
 }
 ```
-And create a pull request to add it to the EndeavourOS Calamares repository. this package must be added to your packages list too.
+And create a pull request to add it to the EndeavourOS Calamares repository. 
+**This package must be added to your packages list too.**
 
 https://github.com/endeavouros-team/PKGBUILDS
 
