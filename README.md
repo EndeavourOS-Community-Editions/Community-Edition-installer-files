@@ -4,13 +4,14 @@ Implementation for Community Edition installs with calamares packagechooser modu
 ## How to get my Community Edition added into EndeavourOS installer?
 
 To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares.
-1. packagechooser.conf:
+
+# 1. packagechooser.conf:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/packagechooser.conf
 
-2. the install command entry:
+# 2. the install command entry:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/contextualprocess.conf
 
-3. add the packages list that is needed in **addition** to the **base system** you find in this file: 
+# 3. add the packages list that is needed in **addition** to the **base system** you find in this file: 
 https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/files/netinstall-ce-base.yaml 
 here:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/tree/main/calamares/ce
@@ -21,15 +22,7 @@ package1
 package2
 package3
 ```
-
-
-4. add a screenshot for your Community Edition here:
-* https://github.com/endeavouros-team/EndeavourOS-calamares/tree/master/calamares/images
-
-Screenshot should have 845x634 pixels and must be .jpg
-<img src="https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images/community.jpg" alt="example" width="845"/>
-
-# packagechooser.conf
+**packagechooser.conf**
 
 Translations are not required  but should be good to make it clear for everyone what your setup is about.
 
@@ -42,7 +35,7 @@ Translations are not required  but should be good to make it clear for everyone 
 
 This 4 lines are requiered to add your Edition. Please validate your edit with a yaml validator! Most calamares config files must be valid yaml to be used.
 
-# contextualprocess.conf:
+**contextualprocess.conf**
 
 ```
 dontChroot: false
@@ -54,13 +47,18 @@ packagechooser_packagechooser:
     
     bspwm:  "pacman -Sy --needed --noconfirm - < /tmp/ce/bspwm.txt"
 ```
-   
- 
  Where sway is the **id:** and **sway.txt** is the packages list.
- 
-5. create a PKGBUILD that installs your configs to /etc/skel and may runs a config script on first boot to setup user specific stuff
 
-# PKGBUILD:
+
+# 4. add a screenshot for your Community Edition here:
+* https://github.com/endeavouros-team/EndeavourOS-calamares/tree/master/calamares/images
+
+Screenshot should have 845x634 pixels and must be .jpg
+<img src="https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images/community.jpg" alt="example" width="845"/>
+ 
+# 5. create a PKGBUILD that installs your configs to /etc/skel and may runs a config script on first boot to setup user specific stuff
+
+**PKGBUILD**
 ```
 # Maintainer: xx>
 # Contributor: xx>
@@ -98,7 +96,7 @@ And create a pull request to add it to the EndeavourOS Calamares repository.
 
 * https://github.com/endeavouros-team/PKGBUILDS
 
-6. The needed Dot-Files for your setup:
+# 6. The needed Dot-Files for your setup:
 
 The Structure of your dotfiles should be sorted like this:
 
