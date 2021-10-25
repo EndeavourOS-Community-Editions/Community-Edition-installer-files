@@ -14,6 +14,7 @@ The files you find here in this repo are only examples to apply your Edition you
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/contextualprocess.conf
 
 **3. add the packages list**
+
 With the packages needed in **addition** to the **base system** you find in this file:
 
 https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/files/netinstall-ce-base.yaml 
@@ -65,7 +66,8 @@ packagechooser_packagechooser:
 Screenshot should have 845x634 pixels and must be .jpg
 <img src="https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images/community.jpg" alt="example" width="845"/>
  
-**5. create a PKGBUILD** 
+**5. create a PKGBUILD**
+
 that installs your configs to /etc/skel and may runs a config script on first boot to setup user specific stuff.
 
 **PKGBUILD**
