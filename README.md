@@ -65,7 +65,8 @@ packagechooser_packagechooser:
 Screenshot should have 845x634 pixels and must be .jpg
 <img src="https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images/community.jpg" alt="example" width="845"/>
  
-# 5. create a PKGBUILD that installs your configs to /etc/skel and may runs a config script on first boot to setup user specific stuff
+**5. create a PKGBUILD** 
+that installs your configs to /etc/skel and may runs a config script on first boot to setup user specific stuff.
 
 **PKGBUILD**
 ```
