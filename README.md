@@ -4,6 +4,8 @@ Implementation for Community Edition installs with calamares packagechooser modu
 ## How to get my Community Edition added into EndeavourOS installer?
 
 To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares.
+The files you find here in this repo are only examples to apply your Edition you need to pull request to our default repositories at 
+* https://github.com/endeavouros-team Organisation.
 
 # 1. packagechooser.conf:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/packagechooser.conf
