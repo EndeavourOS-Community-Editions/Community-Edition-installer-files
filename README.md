@@ -9,14 +9,24 @@ Implementation for Community Edition installs with calamares packagechooser modu
 2. the install command entry:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/contextualprocess.conf
 
-3. add the packages list that is needed in addition to the **base system** you find in this file: 
+3. add the packages list that is needed in **addition** to the **base system** you find in this file: 
 https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/files/netinstall-ce-base.yaml 
 here:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/tree/main/calamares/ce
-File name is your **id** used in **packagechooser.conf** that will be used to select and install the packages list inside the **contextualprocess.conf**
+File name is your Edition Name used in **packagechooser.conf** as **id** that will be used to select and install the packages list inside the **contextualprocess.conf** (p.e. sway.txt)
+
+```
+package1
+package2
+package3
+```
+
 
 4. add a screenshot for your Community Edition here:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/tree/master/calamares/images
+
+Screenshot should have 845x634 pixels and must be .jpg
+<img src="https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images/community.jpg" alt="example" width="845"/>
 
 # packagechooser.conf
 
@@ -29,10 +39,7 @@ Translations are not required  but should be good to make it clear for everyone 
       screenshot: "/etc/calamares/images/sway.jpg"
  ```
 
-This 4 ones are requiered to add your Edition. Please validate your edit with a yaml validator! The 2 calamares config files must be valid yaml to be used.
-
-Screenshot should have 1067x800 pixels and must be .jpg
-<img src="https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images/community.jpg" alt="example" width="1067"/>
+This 4 lines are requiered to add your Edition. Please validate your edit with a yaml validator! Most calamares config files must be valid yaml to be used.
 
 # contextualprocess.conf:
 
