@@ -7,17 +7,24 @@ To use the packagechooser module in calamares we need you to add your Community 
 The files you find here in this repo are only examples to apply your Edition you need to pull request to our default repositories at 
 * https://github.com/endeavouros-team Organisation.
 
-# 1. packagechooser.conf:
+**1. packagechooser.conf**
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/packagechooser.conf
 
-# 2. the install command entry:
+**2. the install command entry**
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/contextualprocess.conf
 
-# 3. add the packages list that is needed in **addition** to the **base system** you find in this file: 
+**3. add the packages list**
+With the packages needed in **addition** to the **base system** you find in this file:
+
 https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/files/netinstall-ce-base.yaml 
+
 here:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/tree/main/calamares/ce
+
 File name is your Edition Name used in **packagechooser.conf** as **id** that will be used to select and install the packages list inside the **contextualprocess.conf** (p.e. sway.txt)
+
+All packages used must be available either in the official Archlinux repositories or in the EndeavourOS package repository.
+* https://github.com/endeavouros-team/repo/tree/master/endeavouros/x86_64
 
 ```
 package1
@@ -52,7 +59,7 @@ packagechooser_packagechooser:
  Where sway is the **id:** and **sway.txt** is the packages list.
 
 
-# 4. add a screenshot for your Community Edition here:
+**4. add a screenshot for your Community Edition here**
 * https://github.com/endeavouros-team/EndeavourOS-calamares/tree/master/calamares/images
 
 Screenshot should have 845x634 pixels and must be .jpg
@@ -98,7 +105,7 @@ And create a pull request to add it to the EndeavourOS Calamares repository.
 
 * https://github.com/endeavouros-team/PKGBUILDS
 
-# 6. The needed Dot-Files for your setup:
+**6. The needed Dot-Files for your setup**
 
 The Structure of your dotfiles should be sorted like this:
 
