@@ -9,7 +9,9 @@ Implementation for Community Edition installs with calamares packagechooser modu
 2. the install command entry:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/contextualprocess.conf
 
-3. add the packages list that is needed in addition to the **base system** you find in this file: https://raw.githubusercontent.com/EndeavourOS-Community-Editions/calamares-packagechooser/main/netinstall-ce-base.yaml here:
+3. add the packages list that is needed in addition to the **base system** you find in this file: 
+https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/files/netinstall-ce-base.yaml 
+here:
 * https://github.com/endeavouros-team/EndeavourOS-calamares/tree/main/calamares/ce
 File name is your **id** used in **packagechooser.conf** that will be used to select and install the packages list inside the **contextualprocess.conf**
 
@@ -82,7 +84,9 @@ package() {
     install -Dm644 "xed.dconf" "${pkgdir}${PREFIX}/xed.dconf"
 }
 ```
-And create a pull request to add it to the EndeavourOS repository. this package must be added to your packages list too.
+And create a pull request to add it to the EndeavourOS Calamares repository. this package must be added to your packages list too.
+
+https://github.com/endeavouros-team/PKGBUILDS
 
 6. The needed Dot-Files for your setup:
 
