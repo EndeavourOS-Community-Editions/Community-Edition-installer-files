@@ -14,8 +14,4 @@ you need a package list and ultimately the necessary configuration files (DotFil
 and scripts that are needed to start and set up the interface.  
 
 
-
 To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares.  
-
-** The files you find here in this repo are only examples to apply your Edition you need to pull request to our default repositories at **  
-* https://github.com/endeavouros-team Organisation.
