@@ -6,12 +6,9 @@ Implementation for Community Edition installs with calamares packagechooser modu
 
 ## How to get my Community Edition added into EndeavourOS installer?
 
-In the install-process you can select a single C_E for the selection window an image  
-and a short description of your edition is required.  
+In the install-process you can select a single Community Edition.  
+For the selection window an image and a short description of your edition is required.  
 In order to install the necessary packages,  
- 
 you need a package list and ultimately the necessary configuration files (DotFiles)  
 and scripts that are needed to start and set up the interface.  
 
-
-To use the packagechooser module in calamares we need you to add your Community Edition into the needed configuration files for calamares.  
