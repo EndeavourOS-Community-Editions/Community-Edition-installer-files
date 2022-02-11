@@ -17,18 +17,17 @@ and scripts that are needed to start and set up the interface.
 
 This repo contains examples for the files you need to create and maintain:
 
-1. [packagechooser_ce.conf](http://url)
-2. [screenshot](http://url)
-3. [setup_once.sh](http://url)or similar script implementation that needs to run on first login.
+1. [packagechooser_ce.conf](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/packagechooser_ce.conf)
+2. [screenshot](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/bspwm.jpg)
+3. [setup_once.sh](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/set_once_i3.sh)or similar script implementation that needs to run on first login.
 4. [skel configuration files (DotFiles)](http://url)
 5. A [PKGBUILD](http://url)  for the used skel packages
 
 For the Desktop Manager (Login Manager) you can choose between this 4:
 
-1. LY
-2. Lightdm (with slick-greeter)
-3. SDDM
-4. LXDM
-5. GDM
+1. Lightdm (with slick-greeter)
+2. SDDM
+3. LXDM
+4. GDM
 
 As these will get handled automatic inside installer.
