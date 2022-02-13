@@ -19,9 +19,9 @@ This repo contains examples for the files you need to create and maintain:
 
 1. [packagechooser_ce.conf](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/packagechooser_ce.conf)
 2. [screenshot](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/bspwm.jpg)
-3. [setup_once.sh](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/set_once_i3.sh)or similar script implementation that needs to run on first login.
-4. [skel configuration files (DotFiles)](http://url)
-5. A [PKGBUILD](http://url)  for the used skel packages
+3. [setup_once.sh](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/set_once_i3.sh) or similar script implementation that needs to run on first login.
+4. [skel configuration files (DotFiles)](https://github.com/EndeavourOS-Community-Editions/bspwm)
+5. A [PKGBUILD](https://github.com/endeavouros-team/PKGBUILDS/blob/master/eos-skel-ce-bspwm/PKGBUILD)  for the used skel packages
 
 For the Desktop Manager (Login Manager) you can choose between this 4:
 
@@ -31,3 +31,5 @@ For the Desktop Manager (Login Manager) you can choose between this 4:
 4. GDM
 
 As these will get handled automatic inside installer.
+
+It is possible to use [LY](https://github.com/nullgemm/ly) also, it will get enabled automatically but autologin will get ignored.
