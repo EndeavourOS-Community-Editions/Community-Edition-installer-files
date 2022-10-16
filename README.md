@@ -18,7 +18,7 @@ and scripts that are needed to start and set up the interface.
 This repo contains examples for the files you need to create and maintain:
 
 1. [packagechooser_ce.conf](https://github.com/endeavouros-team/EndeavourOS-calamares/blob/main/calamares/modules/packagechooser_ce.conf)
-2. [screenshot](https://github.com/EndeavourOS-Community-Editions/Community-Edition-installer-files/blob/apollo/bspwm.jpg)
+2. [screenshot](https://raw.githubusercontent.com/endeavouros-team/EndeavourOS-calamares/main/calamares/images-ce/bspwm.jpg)
 3. [setup_once.sh](https://github.com/endeavouros-team/endeavouros-xfce4-theming/blob/master/set_once.sh) or similar script implementation that needs to run on first login.
 4. [skel configuration files (DotFiles)](https://github.com/EndeavourOS-Community-Editions/bspwm)
 5. A [PKGBUILD](https://github.com/endeavouros-team/PKGBUILDS/blob/master/eos-skel-ce-bspwm/PKGBUILD)  for the used skel packages
