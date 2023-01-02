@@ -32,4 +32,3 @@ For the Desktop Manager (Login Manager) you can choose between this 4:
 
 As these will get handled automatic inside installer.
 
-It is possible to use [LY](https://github.com/nullgemm/ly) also, it will get enabled automatically but autologin will get ignored.
