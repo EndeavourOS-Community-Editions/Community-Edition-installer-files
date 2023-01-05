@@ -22,6 +22,7 @@ This repo contains examples for the files you need to create and maintain:
 3. [setup_once.sh](https://github.com/endeavouros-team/endeavouros-xfce4-theming/blob/master/set_once.sh) or similar script implementation that needs to run on first login.
 4. [skel configuration files (DotFiles)](https://github.com/EndeavourOS-Community-Editions/bspwm)
 5. A [PKGBUILD](https://github.com/endeavouros-team/PKGBUILDS/blob/master/eos-skel-ce-bspwm/PKGBUILD)  for the used skel packages
+!! remember to always do a version update on the PKGBUILD when changing the configs, so it triggers package rebuild for the repository !! 
 
 For the Desktop Manager (Login Manager) you can choose between this 4:
 
