@@ -1,3 +1,5 @@
+## Archived as no longer used inside installer ISO itself 
+
 # EndeavourOS Community Editions  
 Implementation for Community Edition installs with calamares packagechooser module 
 
